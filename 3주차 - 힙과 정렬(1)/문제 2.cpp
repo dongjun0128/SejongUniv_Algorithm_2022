@@ -4,6 +4,8 @@ int H[100] = { 0 };
 int n = 0;
 
 // 자식 노드보다 내가 더 작으면 내려가는 함수
+// Left_Index = Index * 2 
+// Right_Index = Index * 2 + 1
 void downheap(int i) {
 	int tmp;
 	if (H[2 * i] > H[2 * i + 1]) {
